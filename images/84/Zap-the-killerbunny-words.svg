@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="188.04401mm"
+   height="23.903185mm"
+   viewBox="0 0 188.044 23.903184"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="zap-the-killerbunny-words.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0645786"
+     inkscape:cx="362.58478"
+     inkscape:cy="149.82454"
+     inkscape:window-width="1444"
+     inkscape:window-height="1024"
+     inkscape:window-x="226"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-11.558562,-29.529852)">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.264999;stop-color:#000000"
+       id="rect621"
+       width="187.44951"
+       height="23.858387"
+       x="11.83349"
+       y="29.440702" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.6324px;line-height:1.65;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.289525"
+       x="15.622401"
+       y="35.469978"
+       id="text236"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.289525"
+         x="15.622401"
+         y="35.469978"
+         id="tspan444"><tspan
+   style="fill:#aa0000"
+   id="tspan400">A(2|1)</tspan>   <tspan
+   style="fill:#008000"
+   id="tspan408">zapB</tspan>     <tspan
+   style="fill:#000080"
+   id="tspan412">zapC</tspan>    <tspan
+   style="fill:#ff0000"
+   id="tspan418">zip</tspan>    <tspan
+   style="fill:#008000"
+   id="tspan410">zapB</tspan>    <tspan
+   style="fill:#000080"
+   id="tspan414">zapC</tspan>    <tspan
+   style="fill:#ff0000"
+   id="tspan420">zip</tspan></tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.289525"
+         x="15.622401"
+         y="43.113438"
+         id="tspan446"><tspan
+   style="fill:#008000"
+   id="tspan404">B(1|1)</tspan>        <tspan
+   style="fill:#008000"
+   id="tspan422">self</tspan>    <tspan
+   style="fill:#ff0000"
+   id="tspan361">zapA</tspan>   <tspan
+   style="fill:#008000"
+   id="tspan424">flip    self</tspan>    <tspan
+   style="fill:#ff0000"
+   id="tspan436">zapA</tspan>    <tspan
+   style="fill:#008000"
+   id="tspan426">flip</tspan></tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.289525"
+         x="15.622401"
+         y="50.756897"
+         id="tspan240"><tspan
+   style="fill:#0000ff"
+   id="tspan406">C(1|1)</tspan>        <tspan
+   style="fill:#916f6f"
+   id="tspan430">(flip)</tspan>  <tspan
+   style="fill:#0000ff"
+   id="tspan428">self</tspan>   <tspan
+   style="fill:#ff0000"
+   id="tspan432">zapA</tspan>    <tspan
+   style="fill:#0000ff"
+   id="tspan440">flip    self</tspan>    <tspan
+   style="fill:#ff0000"
+   id="tspan434">zapA</tspan>   <tspan
+   style="fill:#000080"
+   id="tspan438">flip</tspan></tspan></text>
+  </g>
+</svg>
