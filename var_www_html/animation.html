@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body, html { height:100%; overflow:hidden }
+        .horizontal-split { display:grid; grid-template-rows: 50% 50%; height:100%; overflow:hidden }
+        #top     { grid-row:1 }
+        #bottom  { grid-row:2 }
+    </style>
+</head>
+<body>
+<div id="animation"></div><div id="siteswapanimation">7531</div>
+<div class="horizontal-split">
+    <div id="top"></div>
+    <div id="bottom"></div>
+</div>
+
+
+<div id="jifout"></div>
+<base href=".">
+<script type=module>import Siteswap from './js/siteswap.mjs';
+//var sw=new Siteswap(5);
+//console.log("out",sw.toJif({jugglers:2, limbs:"ABCD", siteswap:5, name:"zaps", props:"clubs"}));
+//var jifout = document.getElementById('jifout');
+//console.log(jifout);
+//jifout.innerHTML= JSON.stringify(sw.toJif({jugglers:2, limbs:"ABCD", siteswap:5, name:"zaps", props:"clubs"}));
+
+</script>
+
+
+<script type="module">
+
+import Siteswap from '/js/siteswap.mjs';
+import AnimationWidget from '/js/animation-widget-standalone.mjs'
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+
+var siteswapnr = urlParams.get("sw");
+
+console.log("siteswapnr " + siteswapnr);
+
+var sw=new Siteswap(siteswapnr);
+var myjson = {jugglers:2, limbs:"ABCD"};
+console.log(JSON.stringify(sw));
+myjson.props=Array.apply(null, Array(sw.nProps)).map(function () {return {}})
+var jif=sw.toJif(myjson);
+
+
+console.log(JSON.stringify(jif));
+const widget =  new AnimationWidget({
+            target: document.getElementById("top"),
+            enableSettings: true,
+            props: {
+                jif: jif,
+                animationSpeed: 0.3,
+                teaser: false
+            }
+        });
+window.widget=widget;
+console.log("widget ",widget);
+const widget2 =  new AnimationWidget({
+            target: document.getElementById("top"),
+            enableSettings: true,
+            props: {
+                jif: jif,
+                animationSpeed: 1.3,
+                teaser: false
+            }
+        });
+window.widget2=widget2;
+console.log("widget ",widget);
+
+
+
+widget.$on("animation-end", () => {
+	console.log("animation-end");
+	widget.$set({paused: true});
+});
+
+
+</script>
+
+</body>
+</html>
+
