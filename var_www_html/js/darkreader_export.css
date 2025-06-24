@@ -1,0 +1,662 @@
+/* this one is manually inserted */
+.gallerytext {
+color: #0a0a0a
+}
+
+/*! Dark reader generated CSS | Licensed under MIT https://github.com/darkreader/darkreader/blob/main/LICENSE */
+
+/* User-Agent Style */
+html {
+    background-color: #181a1b !important;
+}
+html {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: #181a1b;
+}
+html, body {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #404400 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #454a4d #202324;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+
+/* Variables Style */
+:root {
+   --darkreader-neutral-background: #131516;
+   --darkreader-neutral-text: #d8d4cf;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}
+
+/* Modified CSS */
+abbr[title] {
+    border-bottom-color: currentcolor;
+}
+abbr[title] {
+    border-bottom-color: currentcolor;
+    text-decoration-color: currentcolor;
+}
+img {
+    border-color: currentcolor;
+}
+legend {
+    color: inherit;
+}
+div.thumb {
+    background-color: transparent;
+}
+.mw-message-box {
+    color: rgb(232, 230, 227);
+    background-color: rgb(34, 37, 38);
+    border-color: rgb(72, 78, 81);
+}
+.mw-message-box h2 {
+    color: inherit;
+    border-color: currentcolor;
+}
+.mw-message-box-error {
+    background-color: rgb(64, 5, 3);
+    border-color: rgb(149, 25, 25);
+}
+.mw-message-box-warning {
+    background-color: rgb(63, 42, 3);
+    border-color: rgb(163, 122, 0);
+}
+.mw-message-box-success {
+    background-color: rgb(4, 74, 62);
+    border-color: rgb(27, 182, 148);
+}
+.mw-wiki-logo {
+    background-image: url("/img/logo-clubs.jpg");
+}
+@media screen {
+    div.thumbinner {
+        border-color: rgb(62, 67, 70);
+        background-color: rgb(27, 30, 31);
+    }
+    .thumbimage {
+        background-color: rgb(24, 26, 27);
+        border-color: rgb(62, 67, 70);
+    }
+    .thumbcaption {
+        border-color: currentcolor;
+    }
+    .thumbborder {
+        border-color: rgb(53, 58, 60);
+    }
+    .magnify a {
+        background-image: url("/mediawiki/resources/src/mediawiki.skinning/images/magnify-clip-ltr.svg?8330e");
+    }
+    .mw-content-ltr .magnify a {
+        background-image: url("/mediawiki/resources/src/mediawiki.skinning/images/magnify-clip-ltr.svg?8330e");
+    }
+    .mw-content-rtl .magnify a {
+        background-image: url("/mediawiki/resources/src/mediawiki.skinning/images/magnify-clip-rtl.svg?38fd5");
+    }
+    a.new {
+        color: rgb(224, 68, 68);
+    }
+    a.mw-selflink {
+        color: inherit;
+        text-decoration-color: inherit;
+    }
+    a.mw-selflink:hover {
+        text-decoration-color: inherit;
+    }
+    a.mw-selflink:active,
+    a.mw-selflink:visited {
+        color: inherit;
+    }
+    a.new:visited {
+        color: rgb(176, 106, 106);
+    }
+    .mw-parser-output a.extiw,
+    .mw-parser-output a.external {
+        color: rgb(103, 159, 213);
+    }
+    .mw-parser-output a.extiw:visited,
+    .mw-parser-output a.external:visited {
+        color: rgb(202, 150, 202);
+    }
+    .mw-parser-output a.extiw:active,
+    .mw-parser-output a.external:active {
+        color: rgb(208, 131, 84);
+    }
+    .mw-underline-always a {
+        text-decoration-color: currentcolor;
+    }
+    .mw-underline-never a {
+        text-decoration-color: currentcolor;
+    }
+    .plainlinks a.external {
+        background-color: rgba(0, 0, 0, 0) !important;
+        background-image: none !important;
+    }
+    .mw-parser-output a.external {
+        color: rgb(103, 159, 213);
+    }
+    .mw-parser-output a.external,
+    .link-mailto,
+    .link-ftp,
+    .link-irc,
+    .link-audio,
+    .link-video,
+    .link-document {
+        background-image: url("/mediawiki/resources/src/mediawiki.skinning/images/external-ltr.svg?59558"); 
+    }
+    .mw-parser-output a.external[href^="mailto:"],
+    .link-mailto {
+        background-image: url("/mediawiki/resources/src/mediawiki.skinning/images/mail.svg?8a79c"); 
+    }
+    .mw-parser-output a.external[href^="ftp://"],
+    .link-ftp {
+        background-image: url("/mediawiki/resources/src/mediawiki.skinning/images/ftp-ltr.svg?c5643"); 
+    }
+    .mw-parser-output a.external[href^="irc://"], .mw-parser-output a.external[href^="ircs://"],
+    .link-irc {
+        background-image: url("/mediawiki/resources/src/mediawiki.skinning/images/chat-ltr.svg?e0649"); 
+    }
+    .mw-parser-output a.external[href$=".ogg"], .mw-parser-output a.external[href$=".OGG"], .mw-parser-output a.external[href$=".mid"], .mw-parser-output a.external[href$=".MID"], .mw-parser-output a.external[href$=".midi"], .mw-parser-output a.external[href$=".MIDI"], .mw-parser-output a.external[href$=".mp3"], .mw-parser-output a.external[href$=".MP3"], .mw-parser-output a.external[href$=".wav"], .mw-parser-output a.external[href$=".WAV"], .mw-parser-output a.external[href$=".wma"], .mw-parser-output a.external[href$=".WMA"],
+    .link-audio {
+        background-image: url("/mediawiki/resources/src/mediawiki.skinning/images/audio-ltr.svg?74d04"); 
+    }
+    .mw-parser-output a.external[href$=".ogm"], .mw-parser-output a.external[href$=".OGM"], .mw-parser-output a.external[href$=".avi"], .mw-parser-output a.external[href$=".AVI"], .mw-parser-output a.external[href$=".mpeg"], .mw-parser-output a.external[href$=".MPEG"], .mw-parser-output a.external[href$=".mpg"], .mw-parser-output a.external[href$=".MPG"],
+    .link-video {
+        background-image: url("/mediawiki/resources/src/mediawiki.skinning/images/video.svg?a3758"); 
+    }
+    .mw-parser-output a.external[href$=".pdf"], .mw-parser-output a.external[href$=".PDF"], .mw-parser-output a.external[href*=".pdf#"], .mw-parser-output a.external[href*=".PDF#"], .mw-parser-output a.external[href*=".pdf?"], .mw-parser-output a.external[href*=".PDF?"],
+    .link-document {
+        background-image: url("/mediawiki/resources/src/mediawiki.skinning/images/document-ltr.svg?0bf90");
+    }
+    .mw-parser-output a.extiw,
+    .mw-parser-output a.extiw:active {
+        color: rgb(103, 159, 213);
+    }
+    .mw-body-content .error {
+        color: rgb(224, 68, 68);
+    }
+    .wikitable {
+        background-color: rgb(27, 30, 31);
+        color: rgb(211, 207, 202);
+        border-color: rgb(72, 78, 81);
+    }
+    .wikitable > tr > th,
+    .wikitable > tr > td,
+    .wikitable > * > tr > th,
+    .wikitable > * > tr > td {
+        border-color: rgb(72, 78, 81);
+    }
+    .wikitable > tr > th,
+    .wikitable > * > tr > th {
+        background-color: rgb(34, 37, 38);
+    }
+    .catlinks {
+        border-color: rgb(72, 78, 81);
+        background-color: rgb(27, 30, 31);
+    }
+    .catlinks ul {
+        list-style-image: none;
+    }
+    .catlinks li {
+        border-left-color: rgb(72, 78, 81);
+    }
+    .catlinks li:first-child {
+        border-left-color: currentcolor;
+    }
+    .toc,
+    .toccolours {
+        border-color: rgb(72, 78, 81);
+        background-color: rgb(27, 30, 31);
+    }
+    .toc h2 {
+        border-color: currentcolor;
+    }
+    .toc ul {
+        list-style-image: none;
+    }
+    .tocnumber,
+    .toctext {
+        text-decoration-color: inherit;
+    }
+    .tocnumber {
+        color: rgb(211, 207, 202);
+    }
+    .toctogglelabel {
+        color: rgb(102, 177, 250); 
+    }
+    .toctogglelabel:hover {
+        text-decoration-color: currentcolor; 
+    }
+    .toctogglecheckbox:focus + .toctitle .toctogglelabel {
+        text-decoration-color: currentcolor; outline-color: currentcolor; 
+    }
+    #searchInput, .oo-ui-textInputWidget input, .oo-ui-textInputWidget textarea, .oo-ui-textInputWidget.oo-ui-widget-enabled input, .oo-ui-textInputWidget.oo-ui-widget-enabled textarea, input[name="target"], input[name="user"], input[name="mime"], input[size$="0"], input[type="text"], input[type="checkbox"], input[type="radio"],
+    input#wpTemplateSandboxPage,
+    input.mw-summary,
+    input.mw-input,
+    .mw-input input,
+    .mw-ui-input:invalid,
+    textarea,
+    .mw-ui-input-inline {
+        box-shadow: rgb(43, 47, 49) 0px 1px 4px -1px inset;
+        border-color: rgb(57, 61, 64); 
+    }
+    .oo-ui-buttonElement-framed > .oo-ui-buttonElement-button, input[type="submit"], input[type="button"],
+    .mw-ui-button.mw-ui-progressive,
+    #mw-createaccount-join,
+    .mw-ui-button,
+    .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button,
+    .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button,
+    button {
+        color: rgb(232, 230, 227);
+        border-color: rgb(72, 78, 81);
+        box-shadow: none;
+        text-shadow: rgb(24, 26, 27) 0px 1px 1px;
+        background-color: rgb(30, 32, 33);
+        background-image: linear-gradient(rgb(26, 28, 29) 0px,
+        rgb(34, 37, 38) 100%); 
+    }
+    .oo-ui-buttonElement-framed > .oo-ui-buttonElement-button:focus, input[type="submit"]:focus, input[type="button"]:focus,
+    .mw-ui-button.mw-ui-progressive:focus,
+    #mw-createaccount-join:focus,
+    .mw-ui-button:focus,
+    .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:focus,
+    .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:focus,
+    button:focus {
+        background-color: rgb(26, 28, 30);
+        background-image: linear-gradient(rgb(24, 26, 27) 0px,
+        rgb(29, 32, 33) 100%);
+        border-color: rgb(72, 78, 81); box-shadow: none; 
+    }
+    .oo-ui-buttonElement-framed > .oo-ui-buttonElement-button:hover, input[type="submit"]:hover, input[type="button"]:hover,
+    .mw-ui-button.mw-ui-progressive:hover,
+    #mw-createaccount-join:hover,
+    .mw-ui-button:hover,
+    .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover,
+    .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover,
+    button:hover {
+        background-color: rgb(26, 28, 30);
+        background-image: linear-gradient(rgb(24, 26, 27) 0px,
+        rgb(29, 32, 33) 100%);
+        border-color: rgb(101, 94, 83); box-shadow: none; 
+    }
+    .oo-ui-buttonElement-framed > .oo-ui-buttonElement-button:active, input[type="submit"]:active, input[type="button"]:active,
+    .mw-ui-button.mw-ui-progressive:active,
+    #mw-createaccount-join:active,
+    .mw-ui-button:active,
+    .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active,
+    .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active,
+    button:active {
+        background-color: rgb(24, 26, 27);
+        background-image: none;
+        border-color: rgb(101, 94, 83);
+        box-shadow: none;
+    }
+    div.editOptions {
+        border-bottom-color: rgb(53, 57, 59);
+    }
+    body {
+        color: rgb(232, 230, 227);
+        background-color: rgb(31, 33, 35);
+        background-image: none;
+    }
+    a {
+        text-decoration-color: currentcolor;
+        color: rgb(82, 177, 255);
+    }
+    a:visited {
+        color: rgb(112, 191, 255);
+    }
+    #p-personal a.new,
+    .new a,
+    a.new {
+        color: rgb(209, 71, 102);
+    }
+    #p-personal a.new:visited,
+    .new a:visited,
+    a.new:visited {
+        color: rgb(216, 100, 126);
+    }
+    a.external,
+    .mw-parser-output a.external {
+        color: rgb(102, 71, 209);
+    }
+    a.external:visited,
+    .mw-parser-output a.external:visited {
+        color: rgb(137, 114, 220);
+    }
+    #header-container {
+        border-bottom-color: rgb(57, 61, 64);
+    }
+    #header-navigation-container {
+        background-color: rgb(24, 26, 27);
+        background-image: none;
+    }
+    #content-container {
+        background-color: rgb(24, 26, 27);
+        background-image: none;
+        border-bottom-color: rgb(57, 61, 64);
+    }
+    a .p-banner {
+        color: rgb(157, 148, 136);
+    }
+    a .p-banner .wordmark-text {
+        text-shadow: rgb(38, 42, 43) 0px -1px 0px,
+        rgb(24, 26, 27) 0px 2px 1px;
+    }
+    a .p-banner:hover {
+        text-decoration-color: currentcolor;
+    }
+    #p-search #searchInput {
+        border-color: rgb(62, 68, 70);
+    }
+    #p-search #searchGoButton {
+        border-color: rgb(67, 73, 76);
+    }
+    #header-navigation-container {
+        border-bottom-color: rgb(53, 57, 59);
+    }
+    #p-personal-extra ul {
+        list-style-image: none;
+    }
+    #footer-bottom {
+        color: rgb(168, 160, 149);
+    }
+    #footer-bottom li {
+        list-style-image: none;
+    }
+    #footer-navigation h3 {
+        color: rgb(168, 160, 149);
+    }
+    #footer-navigation a {
+        color: rgb(189, 183, 175);
+    }
+    #footer-navigation ul {
+        list-style-image: none;
+    }
+    #content-header-inner {
+        border-bottom-color: rgb(53, 57, 59);
+    }
+    #content-header {
+        border-bottom-color: rgb(53, 57, 59);
+    }
+    #content-header ul {
+        list-style-image: none;
+        text-shadow: none;
+    }
+    #content-header ul li.selected a {
+        color: rgb(168, 160, 149);
+    }
+    #content-header #page-tools #p-actions h3 {
+        background-image: url("/mediawiki/skins/GreyStuff/resources/images/arrow-down.svg?1edd4");
+    }
+    #content-header #page-tools #p-actions .dropdown {
+        background-color: rgb(24, 26, 27);
+        background-image: none;
+        border-color: rgb(53, 57, 59);
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;
+    }
+    #content-header #page-tools #p-actions .dropdown ul {
+        list-style-image: none;
+    }
+    #ca-watch a {
+        background-image: url("/mediawiki/skins/GreyStuff/resources/images/star.svg?06c1b");
+    }
+    #ca-unwatch a {
+        background-image: url("/mediawiki/skins/GreyStuff/resources/images/star-filled.svg?cf8d6");
+    }
+    #ca-unwatch a.mw-watchlink-temp {
+        background-image: url("/mediawiki/skins/GreyStuff/resources/images/star-half-filled.svg?20f88");
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    dt {
+        color: rgb(189, 183, 175);
+    }
+    #mw-content-text h1,
+    #mw-content-text h2 {
+        border-bottom-color: rgb(53, 57, 59);
+    }
+    #mw-content-text .toc h2 {
+        border-bottom-color: currentcolor;
+    }
+    h1 {
+        color: rgb(168, 160, 149);
+    }
+    h5 {
+        color: rgb(200, 195, 188);
+    }
+    h6,
+    dt {
+        color: rgb(232, 230, 227);
+    }
+    .toctoggle,
+    .mw-editsection-bracket,
+    .mw-editsection-divider,
+    .client-js .mw-content-ltr .mw-editsection-bracket:first-of-type,
+    .client-js .mw-content-rtl .mw-editsection-bracket:not(:first-of-type),
+    .client-js .mw-content-ltr .mw-editsection-bracket:last-of-type,
+    .client-js .mw-content-rtl .mw-editsection-bracket:not(:last-of-type) {
+        color: rgb(178, 172, 162);
+    }
+    .mw-editsection {
+        text-shadow: none;
+    }
+    hr {
+        border-color: rgb(53, 57, 59);
+    }
+    #catlinks {
+        border-top-color: rgb(53, 57, 59);
+        color: rgb(157, 148, 136);
+    }
+    #catlinks li {
+        border-color: currentcolor;
+    }
+    #contentSub {
+        border-bottom-color: rgb(53, 57, 59);
+        color: rgb(157, 148, 136);
+    }
+    #contentSub a {
+        color: rgb(189, 183, 175);
+    }
+    ul#filetoc {
+        border-color: currentcolor currentcolor rgb(53, 57, 59);
+        background-color: transparent;
+        background-image: none;
+    }
+    ul#filetoc a {
+        color: rgb(189, 183, 175);
+    }
+    #toc,
+    .toc,
+    .mw-warning {
+        border-bottom-color: rgb(53, 57, 59);
+        color: rgb(168, 160, 149);
+    }
+    #toc a,
+    .mw-editsection a {
+        color: rgb(189, 183, 175);
+    }
+    .toc ul {
+        list-style-image: none;
+    }
+    #toc #toctitle {
+        border-bottom-color: rgb(53, 57, 59);
+    }
+    .tright .thumbinner {
+        background-color: rgb(24, 26, 27);
+        background-image: none;
+    }
+    .tleft .thumbinner {
+        background-color: rgb(24, 26, 27);
+        background-image: none;
+    }
+    .thumbcaption {
+        border-bottom-color: rgb(53, 57, 59);
+    }
+    .thumbinner img {
+        border-color: rgb(53, 57, 59);
+    }
+    div.magnify a {
+        background-image: url("/mediawiki/skins/GreyStuff/resources/images/magnify-ltr.svg?9cb9d");
+    }
+}
+@media screen and (min-width: 761px) {
+    #p-personal-container {
+        color: rgb(168, 160, 149);
+    }
+    #p-personal-container #p-personal-label {
+        background-image: url("/mediawiki/skins/GreyStuff/resources/images/arrow-down.svg?1edd4");
+    }
+    #p-personal-container .dropdown {
+        background-color: rgb(24, 26, 27);
+        background-image: none;
+        border-color: rgb(53, 57, 59);
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;
+    }
+    #p-personal-container .dropdown ul {
+        list-style-image: none;
+    }
+    #header-navigation h3 {
+        background-image: url("/mediawiki/skins/GreyStuff/resources/images/arrow-down.svg?1edd4");
+        text-shadow: none;
+    }
+    #header-navigation .mw-portlet .dropdown {
+        background-color: rgb(24, 26, 27);
+        background-image: none;
+        border-color: rgb(53, 57, 59);
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;
+    }
+    #header-navigation .mw-portlet .dropdown ul {
+        list-style-image: none;
+    }
+}
+@media screen and (max-width: 760px) {
+    #header-navigation-container {
+        border-bottom-color: currentcolor;
+    }
+    #content-header {
+        border-bottom-color: currentcolor;
+    }
+    #footer-navigation .navigation {
+        border-top-color: rgb(57, 61, 64);
+    }
+    #footer-navigation .mw-portlet {
+        border-bottom-color: rgb(57, 61, 64);
+    }
+    #return-to-top {
+        background-image: url("/mediawiki/skins/GreyStuff/resources/images/top-icon.svg?4d84a");
+    }
+    .client-nojs #jump-to-end {
+        background-image: url("/mediawiki/skins/GreyStuff/resources/images/menu-icon.svg?21b96");
+    }
+    .client-nojs #p-personal-label {
+        background-image: url("/mediawiki/skins/GreyStuff/resources/images/user-icon.svg?6a744");
+    }
+    .client-nojs #p-personal .dropdown {
+        background-color: rgb(24, 26, 27);
+        background-image: none;
+        border-color: rgb(53, 57, 59);
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;
+    }
+    .client-nojs #p-personal .dropdown ul {
+        list-style-image: none;
+    }
+}
+@media screen and (max-width: 760px) {
+    #tools-menu-toggle {
+        background-image: url("/mediawiki/skins/GreyStuff/resources/images/gear-icon.svg?331ba");
+    }
+    #personal-menu-toggle {
+        background-image: url("/mediawiki/skins/GreyStuff/resources/images/user-icon.svg?6a744");
+    }
+    #main-menu-toggle {
+        background-image: url("/mediawiki/skins/GreyStuff/resources/images/menu-icon.svg?21b96");
+    }
+    #header-container #p-personal .dropdown {
+        border-color: currentcolor;
+        box-shadow: none;
+    }
+    #header-container #p-personal,
+    #header-container #p-personal:hover,
+    #header-navigation .navigation,
+    #header-navigation .navigation-tools {
+        background-color: rgb(24, 26, 27);
+        background-image: none;
+        border-color: rgb(53, 57, 59);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
+    }
+    #header-container #p-personal ul,
+    #header-container #p-personal:hover ul,
+    #header-navigation .navigation ul,
+    #header-navigation .navigation-tools ul {
+        list-style-image: none;
+    }
+    #header-container #p-personal #p-welcome,
+    #header-container #p-personal:hover #p-welcome,
+    #header-navigation .navigation #p-welcome,
+    #header-navigation .navigation-tools #p-welcome,
+    #header-container #p-personal h3,
+    #header-container #p-personal:hover h3,
+    #header-navigation .navigation h3,
+    #header-navigation .navigation-tools h3 {
+        border-bottom-color: rgb(53, 57, 59);
+        background-image: none;
+    }
+    #menus-cover {
+        background-color: rgba(83, 90, 94, 0.7);
+        background-image: none;
+    }
+}
+@media screen {
+    #footer-navigation .mw-portlet {
+        border-bottom-color: rgb(57, 61, 64);
+    }
+}
+
