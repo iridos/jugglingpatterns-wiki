@@ -58,7 +58,7 @@ $wgEmailAuthentication = true;
 $wgDBtype = "mysql";
 $wgDBserver = "localhost";
 $wgDBname = "my_jugglingwiki";
-$wgDBuser = "wiki";
+$wgDBuser = "jugglingwiki";
 $wgDBpassword = "";
 
 # MySQL specific settings
