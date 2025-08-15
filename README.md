@@ -1,26 +1,30 @@
 This repo contains a backup of the wiki pages/files from jugglingpatterns.de to make the it permanently available.
 
-https://www.mediawiki.org/wiki/Manual:Installing_MediaWiki/
-https://www.mediawiki.org/wiki/Manual:Restoring_a_wiki_from_backup
+    https://www.mediawiki.org/wiki/Manual:Installing_MediaWiki/
+    https://www.mediawiki.org/wiki/Manual:Restoring_a_wiki_from_backup
 
 Steps to re-assemble:
 
 * debian install with web server php mysql:
-apt install apache2 php mariadb
 
-apt install mediawiki-skin-greystuff
+    apt install apache2 php mariadb
+    apt install mediawiki-skin-greystuff
 
 * image conversion:
 - install imagemagick and inkscape for image conversion
 without inkscape, svg to png thumb generation will produce garbage
+
     apt install imagemagick inkscape
+
 - fonts. I switched  the overview to noto sans: apt install fonts-noto-core/stable. Not sure what the other files use, probably best from now on to stick to a fixed set of fonts that needs to be available
 
     apt install mediawiki 
     git clone https://github.com/iridos/jugglingpatterns-wiki
     cp etc_LocalSettings.php /etc/mediawiki/LocalSettings.php
+
 edit /etc/mediawiki/LocalSettings.php and change 
-* $wgDBpassword = "secretpassword";
+
+    $wgDBpassword = "secretpassword";
 
 Change Database:
 
