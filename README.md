@@ -9,20 +9,26 @@ Steps to re-assemble:
 apt install apache2 php mariadb
 
 apt install mediawiki-skin-greystuff
-* install imagemagick and inkscape for image conversion
-without inkscape, svg to png thumb generation will produce garbage
-apt install imagemagick inkscape
 
-apt install mediawiki 
-git clone https://github.com/iridos/jugglingpatterns-wiki
-cp etc_LocalSettings.php /etc/mediawiki/LocalSettings.php
+* image conversion:
+- install imagemagick and inkscape for image conversion
+without inkscape, svg to png thumb generation will produce garbage
+    apt install imagemagick inkscape
+- fonts. I switched  the overview to noto sans: apt install fonts-noto-core/stable. Not sure what the other files use, probably best from now on to stick to a fixed set of fonts that needs to be available
+
+    apt install mediawiki 
+    git clone https://github.com/iridos/jugglingpatterns-wiki
+    cp etc_LocalSettings.php /etc/mediawiki/LocalSettings.php
 edit /etc/mediawiki/LocalSettings.php and change 
 * $wgDBpassword = "secretpassword";
-mysql -u root
-use mysql;
-select user from user;
-create USER 'jugglingwiki'@'localhost' IDENTIFIED BY 'secretpassword';
-GRANT ALL PRIVILEGES ON my_jugglingwiki.* TO 'jugglingwiki'@'localhost';
+
+Change Database:
+
+    mysql -u root
+    use mysql;
+    select user from user;
+    create USER 'jugglingwiki'@'localhost' IDENTIFIED BY 'secretpassword';
+    GRANT ALL PRIVILEGES ON my_jugglingwiki.* TO 'jugglingwiki'@'localhost';
 
 also changed from in-repo:
 * $wgEmergencyContact  # deprecated, no need to set
@@ -33,6 +39,7 @@ also changed from in-repo:
 uncomment wfLoadExtension( 'UniversalLanguageSelector' ); or install UniversalLanguageSelector extension
 
 restoring images:
-php /usr/share/mediawiki/maintenance/importImages.php images --comment="Importing files from local file repository"  --search-recursively --overwrite
-chown -R www-data /var/lib/mediawiki/images/
+
+    php /usr/share/mediawiki/maintenance/importImages.php images --comment="Importing files from local file repository"  --search-recursively --overwrite
+    chown -R www-data /var/lib/mediawiki/images/
 
