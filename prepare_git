@@ -12,6 +12,6 @@ rsync /var/www/html/animation.html var_www_html
 rsync -L /var/www/html//js/animation-widget-standalone.mjs var_www_html
 rsync -L /var/www/html//js/animation-widget-standalone.mjs.map var_www_html
 
-git add images jugglingwiki.sql
+git add images jugglingwiki.sql var_www_html
 git commit
 git push

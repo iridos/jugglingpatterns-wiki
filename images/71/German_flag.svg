@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16.919649mm"
+   height="10.151786mm"
+   viewBox="0 0 16.919649 10.151786"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="german_flag.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.72960859"
+     inkscape:cx="291.25205"
+     inkscape:cy="278.91667"
+     inkscape:window-width="1389"
+     inkscape:window-height="974"
+     inkscape:window-x="232"
+     inkscape:window-y="53"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-27.952219,-16.737225)">
+    <g
+       id="g1"
+       transform="matrix(0.14210724,0,0,0.14210724,23.980006,14.358744)">
+      <rect
+         id="black_stripe"
+         width="119.06253"
+         height="47.625008"
+         x="27.952223"
+         y="16.737225"
+         style="font-size:18px;font-family:Arial;fill:#000000;stroke-width:0.264584" />
+      <rect
+         id="red_stripe"
+         width="119.06253"
+         height="47.625008"
+         x="27.952223"
+         y="40.549717"
+         style="font-size:18px;font-family:Arial;fill:#ff0000;stroke-width:0.264584" />
+      <rect
+         id="gold_stripe"
+         width="119.06253"
+         height="23.812504"
+         x="27.952223"
+         y="64.362213"
+         style="font-size:18px;font-family:Arial;fill:#ffce00;stroke-width:0.264584" />
+      <rect
+         id="flag-outline"
+         width="118.79791"
+         height="71.172905"
+         x="28.084511"
+         y="16.869516"
+         style="font-size:18px;font-family:Arial;fill:none;stroke:#000000;stroke-width:0.264584" />
+    </g>
+  </g>
+</svg>
