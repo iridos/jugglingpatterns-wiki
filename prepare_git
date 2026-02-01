@@ -1,5 +1,7 @@
 #!/bin/bash
-cd /home/debian/jugglingpatterns-wiki/
+#cd /home/debian/jugglingpatterns-wiki/
+gitdir=/root/jugglingpatterns-wiki/
+cd $gitdir
 su -c "chmod a+rX /var/lib/mediawiki/images/"
 git add --dry-run images
 echo doing rsync
@@ -7,10 +9,10 @@ sleep 2;
 rsync -va /var/lib/mediawiki/images/[1-9a-z]/ images/
 git add --dry-run images
 ls -la /var/lib/automysqlbackup/daily/my_jugglingwiki/*$(date --iso)*sql.gz # this seems to have changed to have gz of current day from around midnight
-su -c "zcat /var/lib/automysqlbackup/daily/my_jugglingwiki/my_jugglingwiki_$(date --iso)*gz" | sed  's/\(:sha512:[0-9]*:[0-9]*:\)[^:]*:[^,]*/\1:XXX:XXX'\''/;s/iridos*@gmail.com/mail/' > /home/debian/jugglingpatterns-wiki/jugglingwiki.sql
-rsync /var/www/html/animation.html var_www_html
-rsync -L /var/www/html//js/animation-widget-standalone.mjs var_www_html
-rsync -L /var/www/html//js/animation-widget-standalone.mjs.map var_www_html
+su -c "zcat /var/lib/automysqlbackup/daily/my_jugglingwiki/my_jugglingwiki_$(date --iso)*gz" | sed  's/\(:sha512:[0-9]*:[0-9]*:\)[^:]*:[^,]*/\1:XXX:XXX'\''/;s/iridos*@gmail.com/mail/' > jugglingwiki.sql
+rsync -v /var/www/jugglingpatterns/animation.html var_www_html
+rsync -v -L /var/www/jugglingpatterns/js/animation-widget-standalone.mjs var_www_html
+rsync -v -L /var/www/jugglingpatterns/js/animation-widget-standalone.mjs.map var_www_html
 
 git add images jugglingwiki.sql var_www_html
 git commit
