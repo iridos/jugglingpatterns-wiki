@@ -14,6 +14,13 @@ rsync -v /var/www/jugglingpatterns/animation.html var_www_html
 rsync -v -L /var/www/jugglingpatterns/js/animation-widget-standalone.mjs var_www_html
 rsync -v -L /var/www/jugglingpatterns/js/animation-widget-standalone.mjs.map var_www_html
 
-git add images jugglingwiki.sql var_www_html
+# remove wiki secrets before commit
+awk '/wgDBpassword|wgSecretKey|wgUpgradeKey/{gsub("\".*\"","\"\"");}{print}' /etc/mediawiki/LocalSettings.php > etc_LocalSettings.php
+
+# no secrets in this file as far as I can see
+cp /etc/apache2/sites-enabled/jugglingpatterns.conf etc_apache2_sites-enabled_jugglingpatterns.conf
+
+git add images jugglingwiki.sql var_www_html etc_LocalSettings.php etc_apache2_sites-enabled_jugglingpatterns.conf prepare_git
 git commit
-git push
+# use custom deploy key
+GIT_SSH_COMMAND="ssh -i ~/.ssh/id_ed25519_jugglingpatternsgit" git push
