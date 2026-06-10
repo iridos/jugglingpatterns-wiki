@@ -12,7 +12,7 @@
 
 # Protect against web entry
 if ( !defined( 'MEDIAWIKI' ) ) {
-	exit;
+    exit;
 }
 
 ## Include platform/distribution defaults
@@ -21,7 +21,7 @@ require_once "$IP/includes/PlatformSettings.php";
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename = "jugglingpatterns";
+$wgSitename = "Juggling and Passing Patterns Wiki";
 $wgMetaNamespace = "Jugglingpatterns";
 
 ## The URL base path to the directory containing the wiki;
@@ -33,6 +33,8 @@ $wgScriptPath = "/mediawiki";
 
 ## The protocol and server name to use in fully-qualified URLs
 $wgServer = "https://www.jugglingpatterns.de";
+# set this domain as "canonical" for search engines
+$wgCanonicalServer = "https://www.jugglingpatterns.de";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
@@ -101,14 +103,14 @@ $wgLocaltimezone = "UTC";
 ## be publicly accessible from the web.
 #$wgCacheDirectory = "$IP/cache";
 
-$wgSecretKey =""
+$wgSecretKey ="";
 
 # Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey =""
+$wgUpgradeKey ="";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
@@ -127,8 +129,18 @@ $wgGroupPermissions['*']['edit'] = false;
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
-##$wgDefaultSkin = "Vector";
+# we ise GreyStuff with a custom css dark-skin mode overlay
+# originally exported from darkreader. Some pages for editors look weird
+# and this can break on wiki updates. But I have compared with the options below
+# and this still seems like the preferred one 
 $wgDefaultSkin = "GreyStuff";
+# default/very common skin
+#$wgDefaultSkin = "Vector";
+# this is more modern and allows users to choose dark/light theme
+# but I actually think the dark theme look is part of the
+# "trademark" look of the site and so should not be just an option
+#$wgDefaultSkin = "minerva";
+#$wgDefaultSkin = "Citizen";
 #$wgDefaultSkin = "MonoBook";
 
 # Enabled skins.
@@ -138,6 +150,7 @@ wfLoadSkin( 'GreyStuff' );
 wfLoadSkin( 'MinervaNeue' );
 wfLoadSkin( 'MonoBook' );
 wfLoadSkin( 'Timeless' );
+wfLoadSkin( 'Citizen' );
 
 
 # Enabled extensions. Most of the extensions are enabled by adding
@@ -159,7 +172,10 @@ $wgSVGConverter = 'ImageMagick';
 $wgSVGConverters = [
     'ImageMagick' => '/usr/bin/convert -background white -geometry $width $input $output',
 ];
-wfLoadExtension( 'UniversalLanguageSelector' );
+# mp4 only in special cases 
+#$wgFileExtensions[] = 'mp4';
+# this was an experiment for multi-language that didn't work so well
+#wfLoadExtension( 'UniversalLanguageSelector' );
 #$wgULSPosition = 'interlanguage';
 
 
@@ -172,4 +188,47 @@ wfLoadExtension( 'UniversalLanguageSelector' );
 //    $out->addHeadItem("itemName", $script);
 //    return true;
 //};
+# time stamp to deprecate thumbs and have them re-created
+$wgThumbnailEpoch = 20251215075756;
+# we shorten the url from /mediawiki/... to /wiki/. 
+# this also has equivalents in the apache config
+$wgArticlePath = "/wiki/$1";
+# we need this to rename Main_Page to the wiki name:
+$wgRestrictDisplayTitle = false;
+# then we set {{DISPLAYTITLE:Juggling Pattern Overview Page}} to rename
 
+# the following are two string manipulation plugins
+# ParserFunctions not on wikipedia, but enables e.g. {{#replace:string|search term|replacement term}}
+
+wfLoadExtension( 'ParserFunctions' );
+$wgPFEnableStringFunctions = true; 
+
+// force canonical links for search engines
+$wgHooks['BeforePageDisplay'][] = function( OutputPage $out, Skin $skin ) {
+    $title = $out->getTitle();
+
+    if ( $title && $title->exists() && !$title->isSpecialPage() ) {
+        // Prüfen, ob dies die konfigurierte Hauptseite ist
+        if ( $title->isMainPage() ) {
+            $url = 'https://www.jugglingpatterns.de/';
+        } else {
+            $url = $title->getCanonicalURL();
+        }
+
+        if ( $url ) {
+            $out->addLink( [
+                'rel' => 'canonical',
+                'href' => $url
+            ] );
+        }
+    }
+    return true;
+};
+
+# Erlaubt das Caching von Seiten für anonyme Benutzer
+$wgCachePages = true;
+# Setzt die Zeit (in Sekunden), die ein Gast-Cache gültig ist
+# but this probably does nothing without redis (but doesnt hurt to set either)
+$wgMainCacheType = CACHE_ANYTHING;
+# show details on errors
+$wgShowExceptionDetails = true;
