@@ -6,7 +6,11 @@ su -c "chmod a+rX /var/lib/mediawiki/images/"
 git add --dry-run images
 echo doing rsync
 sleep 2;
-rsync -va /var/lib/mediawiki/images/[1-9a-z]/ images/
+
+# rsync -va /var/lib/mediawiki/images/[1-9a-z]/ images/
+# evtl rm -rf images/ um geloeschte Dateien loszuwerden. Gleich gebliebene Dateien sollten als alt erkannt werden
+find /var/lib/mediawiki/images/[1-9a-z]/ -type f -exec cp {} images/ \;
+
 git add --dry-run images
 ls -la /var/lib/automysqlbackup/daily/my_jugglingwiki/*$(date --iso)*sql.gz # this seems to have changed to have gz of current day from around midnight
 su -c "zcat /var/lib/automysqlbackup/daily/my_jugglingwiki/my_jugglingwiki_$(date --iso)*gz" | sed  's/\(:sha512:[0-9]*:[0-9]*:\)[^:]*:[^,]*/\1:XXX:XXX'\''/;s/iridos*@gmail.com/mail/' > jugglingwiki.sql
